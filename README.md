@@ -1,6 +1,5 @@
 # TCH2204 Group 1
 Technologies used:
-
 - [Node](https://nodejs.org/)
 - [Express](http://expressjs.com/)
 - [MongoDB](https://www.mongodb.com/)
