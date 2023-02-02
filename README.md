@@ -1,6 +1,6 @@
-# MEVN Stack
+# TCH2204 Group 1
+Technologies used:
 
-A Quickstart template for building a fullstack using:
 - [Node](https://nodejs.org/)
 - [Express](http://expressjs.com/)
 - [MongoDB](https://www.mongodb.com/)
@@ -33,10 +33,8 @@ cp .env.example .env
 ```
 
 ### Other Dependencies
-
-You will also need:
-  - A MongoDB instance to connect to
-  - The [Vue CLI](https://cli.vuejs.org/) installed
+ - MongoDB
+ - The [Vue CLI](https://cli.vuejs.org/)
 
 ## Development
 
