@@ -8,9 +8,9 @@
     "dev": "node scripts/dev-runner.js",
     "dev:server": "nodemon src/index.js",
     "dev:client": "npm run serve --prefix ./client",
-    "build:client": "npm run build --prefix ./client",
+    "build:client": "SET NODE_OPTIONS=--openssl-legacy-provider && npm run build --prefix ./client",
     "static": "npm run build && npm run dev:serve",
-    "lint": "eslint src/*",
+    "lint": "eslint --openssl-legacy-provider lint src/*",
     "lint:fix": "eslint --fix src/*"
   },
   "dependencies": {
@@ -18,7 +18,10 @@
     "express": "^4.17.1",
     "mongoose": "^6.0.4",
     "morgan": "^1.10.0",
-    "trunks-log": "^2.0.3"
+    "node": "^16.0.0",
+    "nvm": "^0.0.4",
+    "trunks-log": "^2.0.3",
+    "webpack-dev-server": "^4.11.1"
   },
   "devDependencies": {
     "boxen": "^5.0.1",
