@@ -1,7 +1,6 @@
 <template>
   <v-card>
     <v-card-title class="primary bright--text">Add New User</v-card-title>
-
     <v-card-text>
       <v-form>
         <v-text-field v-model="name" label="Name" />
