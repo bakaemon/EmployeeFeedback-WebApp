@@ -14,7 +14,6 @@
     <snack-bar />
   </v-app>
 </template>
-
 <script>
 import Modal from './components/Modals/Modal.vue'
 import AppBar from './components/Application/AppBar.vue'
