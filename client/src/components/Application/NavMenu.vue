@@ -41,18 +41,13 @@ export default {
     navLinks: [
       {
         text: 'Home',
-        route: '/',
+        route: '/home',
         icon: 'mdi-home',
       },
       {
         text: 'Users',
         route: '/users',
         icon: 'mdi-account-group',
-      },
-      {
-        text: 'Login',
-        route: '/login',
-        icon: 'mdi-login',
       },
     ],
   }),

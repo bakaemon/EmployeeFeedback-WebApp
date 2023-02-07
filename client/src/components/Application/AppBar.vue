@@ -43,6 +43,15 @@
       >
         <v-icon>mdi-github</v-icon>
       </v-btn>
+      <v-btn
+        icon
+        depressed
+        tag="a"
+        class="bright--text"
+        href="#/login"
+      >
+      <v-icon>mdi-login</v-icon>
+    </v-btn>
     </v-app-bar>
   </div>
 </template>

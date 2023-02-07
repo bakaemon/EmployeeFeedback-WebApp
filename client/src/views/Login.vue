@@ -9,9 +9,9 @@
 
    <div class="container">
       <div class="row">
-         <div class="col-lg-4 col-md-6 col-sm-8 mx-auto">
+         <div class="col-lg-4 col-md-6 col-sm-8 mx-auto ">
             <div v-if="!registerActive" class="card login" v-bind:class="{ error: emptyFields }">
-               <h1>Sign In</h1>
+               <h1 style="color: blue;">Sign In</h1>
                <form class="form-group">
                   <input v-model="emailLogin" type="text" class="form-control" placeholder="Username" required>
                   <input v-model="passwordLogin" type="password" class="form-control" placeholder="Password" required>
@@ -42,7 +42,8 @@
 </template>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.18/vue.min.js"></script>
 <script>
-  import {router} from '../router/index'
+
+  import { routes } from '../router/index.js'
    export default {
       name: 'Login',
 
@@ -61,8 +62,8 @@
           if (this.emailLogin === "" || this.passwordLogin === "") {
              this.emptyFields = true;
           } else {
-            //  alert("You are now logged in");
-             this.$router.push('/users')
+              alert("You are now logged in");
+              this.$router.push({path: '/users'});
           }
        },
        
@@ -71,6 +72,7 @@
              this.emptyFields = true;
           } else {
              alert("You are now registered");
+             
           }
        }
       }

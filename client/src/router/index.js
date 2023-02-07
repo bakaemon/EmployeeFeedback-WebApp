@@ -4,11 +4,12 @@ import Home from '../views/Home.vue'
 import Users from '../views/Users.vue'
 import Login from '../views/Login.vue'
 
+
 Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
+    path: '/home',
     name: 'Home',
     component: Home,
   },
@@ -22,10 +23,14 @@ const routes = [
     name: 'Login',
     component: Login,
   },
+  {
+    path: '',
+    component: Login,
+  },
 ]
 
 const router = new VueRouter({
   routes,
 })
 
-export default router
+export default router 
