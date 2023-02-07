@@ -74,6 +74,7 @@ export default {
 
     openDeleteModal() {
       console.log(this.user)
+      console.log(this.user._id)
       ModalService.openConfirmModal({
         loading: () => this.$store.getters['users/Loading'],
         destructive: true,
